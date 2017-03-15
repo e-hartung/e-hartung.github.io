@@ -1,27 +1,40 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal website and portfolio of programmer Elizabeth Hartung">
+    <title>Elizabeth Hartung</title>
 
-  <title>Elizabeth Hartung</title>
-  <meta name="description" content="">
+    <!-- <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script> -->
 
-	<link href="css/main.css" media="screen, projection" rel="stylesheet" type="text/css" />
-  <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+	<!-- <link href="css/featherlight.min.css" type="text/css" rel="stylesheet" />
+ 	<link href="css/featherlight.gallery.min.css" type="text/css" rel="stylesheet" /> -->
 
-	
-	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    
+    <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css" integrity="sha384-" crossorigin="anonymous">
+    
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/grids-responsive-old-ie-min.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+        <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/grids-responsive-min.css">
+    <!--<![endif]-->
+    
+    <link href="css/main.css" media="screen, projection" rel="stylesheet" type="text/css" >
+ 	<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+
+ 	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 	<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
 	<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
 	<link rel="manifest" href="/manifest.json">
 	<meta name="theme-color" content="#ffffff">
 
-	<link href='https://fonts.googleapis.com/css?family=Fira+Sans:400,300,500' rel='stylesheet' type='text/css'>
-  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:300,400" rel="stylesheet">
+	<!-- <link href="https://fonts.googleapis.com/css?family=Oswald:700|Oxygen:400,700" rel="stylesheet"> -->
+	<link href="https://fonts.googleapis.com/css?family=Nunito:400,700|Montserrat:700" rel="stylesheet">
 
-	<script>
+    <script>
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -32,15 +45,141 @@
 	</script>
 </head>
 <body>
-	<div class="main">
-		<h1>Elizabeth Hartung</h1>
 
-		<h2>Augusta, GA</h2>
+<div id="layout" class="pure-g">
+    <div class="sidebar pure-u-1 pure-u-md-1-4">
+        <div class="header">
+        	<img src="img/self.png" class="portrait" />
+            <h1 class="brand-title">Elizabeth Hartung</h1>
+            <h2 class="brand-tagline">Software Developer</h2>
+            <ul class="personal-info">
+				<li class="location">
+					Augusta, GA
+					<i class="fa fa-map-marker"></i>
+				</li>
+				<li class="email">
+					<a href="mailto: contact@ehartung.com">contact@ehartung.com</a>
+					<i class="fa fa-envelope"></i>
+				</li>
+				<li class="github">
+					<a href="https://github.com/e-hartung">e-hartung</a>
+					<i class="fa fa-github"></i>
+				</li>
+				<li class="linkedin">
+					<a href="https://linkedin.com/in/emhartung">emhartung</a>
+					<i class="fa fa-linkedin"></i>
+				</li>
+            </ul>
+        </div>
+    </div>
 
-		<p class="ext-links"><a href="http://github.com/e-hartung" title="GitHub"> <i class="fa fa-github" aria-hidden="true"></i> GitHub</a>
-		<a href="https://www.linkedin.com/in/emhartung" title="LinkedIn"> <i class="fa fa-linkedin" aria-hidden="true"></i> LinkedIn</a>
-		<a href="mailto:contact@ehartung.com" title="Email"> <i class="fa fa-envelope-o" aria-hidden="true"></i> Email</a></p>
-	</div>
+    <div class="content pure-u-1 pure-u-md-3-4">
+        <div>
+            <div class="posts">
+                <h1 class="content-subhead">Projects</h1>
 
+                <section class="post">
+                    <h2 class="post-title">Taco Success</h2>
+                    <h4 class="post-tagline">Team capstone project for AAS in Programming at Augusta Tech</h4>
+
+                    <div class="post-meta">
+						<p>ASP.NET, MySQL, Bootstrap</p>
+						<p>Role: Programmer</p>
+                    </div>
+
+                    <div class="post-description">
+						<p>Ordering system for a fast food restaurant</p>
+						<p>Comprised of a touch screen kiosk app for customers and automated inventory re-ordering, kiosk reports, and order management for employees</p>
+						<p>Created per the needs of a product owner and developed using Agile methodologies</p>
+						<p>(Currently in development)</p>
+                    </div>
+
+                    <div class="ext-links">
+                    	<a href="https://github.com/e-hartung/TacoSuccess">Source</a>
+					</div>
+                </section>
+
+                <section class="post">
+                    <h2 class="post-title">Decision Time! Restaurant Veto App</h2>
+
+                    <div class="post-meta">
+						<p>PHP, MySQL, Skeleton Framework</p>
+					</div>
+
+                    <div class="post-description">
+						<p>Simple elimination web app for deciding where to eat</p>
+						<p>(To view the demo, enter "demo" for username and password)</p>
+                    </div>
+
+                    <div class="ext-links">
+                    	<a href="http://ehartung.xyz/RestaurantVeto/">Demo</a>
+                    	<a href="https://github.com/e-hartung/RestaurantVeto">Source</a>
+                    </div>
+                </section>
+
+                <section class="post">
+                    <h2 class="post-title">SportsPro Technical Support</h2>
+
+                    <div class="post-meta">
+						<p>PHP, MySQL, Skeleton Framework</p>
+					</div>
+
+                    <div class="post-description">
+                        <p>Support portal for a sports retailer</p>
+                    </div>
+
+                    <div class="ext-links">
+                    	<a href="http://ehartung.xyz/tech_support/">Demo</a>
+                    	<a href="https://github.com/e-hartung/tech_support">Source</a>
+                    </div>
+                </section>
+
+                <section class="post">
+                    <h2 class="post-title">Tina48</h2>
+
+                    <div class="post-meta">
+						<p>HTML, CSS</p>
+					</div>
+
+                    <div class="post-description">
+						<p>A Tina Belcher-themed clone of 2048</p>
+                    </div>
+
+                    <div class="ext-links">
+                    	<a href="http://ehartung.com/Tina48/">Demo</a>
+                    	<a href="https://github.com/e-hartung/Tina48">Source</a>
+                    </div>
+                </section>
+
+                <section class="post">
+                    <h2 class="post-title">hipster-to-hippo</h2>
+
+                    <div class="post-meta">
+						<p>Javascript</p>
+					</div>
+
+                    <div class="post-description">
+						<p>Chome extension that replaces occurences of the word "hipster" with "hippo"</p>
+                    </div>
+
+                    <div class="ext-links">
+                    	<a href="https://github.com/e-hartung/hipster-to-hippo">Source</a>
+                    </div>
+                </section>
+            </div>
+
+            <div class="footer">
+                <div class="pure-menu pure-menu-horizontal">
+                    <p>Created with <a href="https://purecss.io" title="Pure">Pure</a>.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>

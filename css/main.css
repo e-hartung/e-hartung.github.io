@@ -1,92 +1,190 @@
-* {
-	margin: 0;
-}
-body {
-	font-family: 'Source Code Pro', monospace;
-	font-size: 24px;
-	color: #222;
-	text-align: center;
-	background: #F6F7F8;
+body, .pure-g {
+	color: #202020;
+	font-family: 'Nunito', sans-serif;
 }
 
-.main {
-	width: 75%;
-	margin: 25vh auto;
+/* font fix; overrides pure's font defaults */
+.header, .footer, .content, .post {
+	font-family: 'Nunito', sans-serif;
 }
 
-h1 {
-	margin-bottom: .5em;
-}
-
-h2 {
-	margin: 0;
-}
-
-a {
-	display: inline-block;
-	font-size: 24px;
-	color: #666;
-	text-decoration: none;
-	padding: .3em .5em;
-	margin: 0 .1em;
-	border: 1px solid #999;
-	box-shadow:
-            1px 1px #666,
-            2px 2px #666,
-            3px 3px #666;
-}
-
-a:hover {
-	color: #333;
-	background-color: #d5e2f2;
-	box-shadow: none;
-	-webkit-transform: translate(3px, 3px);
-	    -ms-transform: translate(3px, 3px);
-	     -o-transform: translate(3px, 3px);
-	        transform: translate(3px, 3px);
-    -webkit-transition: transform 0.1s ease-in-out;
-		-ms-transition: transform 0.1s ease-in-out;
-		 -o-transition: transform 0.1s ease-in-out;
-    		transition: transform 0.1s ease-in-out;
-}
-
-a:active {
-	transform: translate(3px, 3px);
-    background-color: #92c0f8;
-}
-
-.ext-links {
-	color: #999;
-	margin: 2em auto;
-	font-size: 1.2em;
-}
-
-@media (max-width: 780px) {
-	body {
-		font-size: 3.5vh;
-	}
-
-	.main {
-		height: 90vh;
-		margin: 5vh auto;
-	}
-
-	h2 {
-		font-size: 1.2em;
-	}
+.content {
 	
-	a {
-		display: block;
-		width: 75%;
-		margin: 5px auto;
-		font-size: 5vh;
-		box-shadow: none;
+}
+
+.sidebar {
+	background-color: #287572;
+	color: #EDEDED;
+}
+
+.footer {
+	max-width: 764px;
+	border-top: 1px solid #999;
+}
+
+.content a {
+	color: #287572;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.content a:hover,
+.content a:focus {
+	border-bottom: 3px solid #287572;
+}
+
+ul.personal-info {
+	list-style: none;
+	padding-left: 0;
+}
+
+.personal-info li {
+	margin-bottom: 15px;
+}
+
+.personal-info li a {
+	color: #EDEDED;
+	text-decoration: none;
+}
+
+.personal-info li a:hover,
+.personal-info li a:focus {
+	border-bottom: 2px solid #63BCB8;
+}
+
+.personal-info .fa {
+	margin-left: 5px;
+	font-size: 18px;
+	vertical-align: middle;
+}
+
+.personal-info .location .fa {
+	font-size: 20px;
+	margin-right: 2px;
+	margin-left: 8px;
+}
+
+.personal-info .email .fa {
+	font-size: 16px;
+}
+
+.content-subhead {
+	font-family: 'Montserrat', sans-serif;
+}
+
+.content .post {
+	max-width: 700px;
+	margin-bottom: 30px;
+	box-shadow: 2px 2px 8px #9f9f9f;
+}
+
+.content .post h2.post-title,
+.content .post h4.post-tagline {
+	display: inline-block;
+	margin: 2rem 2rem 0 2rem;
+}
+
+.content .post .post-meta {
+	margin: 2em 2em 1em 2.5em;
+	padding-left: 1em;
+	border-left: 3px solid #f9f9f9;
+	font-size: 0.9em;
+}
+
+.content .post .post-meta p {
+	margin: 10px 0;
+}
+
+.content .post .post-description {
+	font-size: 0.9em;
+	margin: 2em;
+}
+
+.content .post .ext-links {
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.content .post .ext-links a {
+	flex-grow: 1;
+	padding: 1em 2em;
+	background-color: #287572;
+	color: #EDEDED;
+	text-align: center;
+	text-decoration: none;
+	border-left: 1px solid #EDEDED;
+}
+
+.content .post .ext-links a:hover,
+.content .post .ext-links a:focus {
+	background-color: #F56462;
+	border-bottom: none;
+}
+
+@media (min-width: 48em) {
+	.content {
+		padding: 2em 3em 0;
+		margin-left: 25%;
 	}
 
-	a:hover {
-		-webkit-transform: none;
-	    	-ms-transform: none;
-	     	 -o-transform: none;
-	        	transform: none;
+	.header {
+		/*margin: 80% 2em 0;*/
+		margin: 4em 2em 2em;
+		text-align: right;
+	}
+
+	.personal-info {
+		margin-top: 30px;
+		text-align: right;
+	}
+
+	.sidebar {
+		position: fixed;
+		top: 0;
+		bottom: 0;
+	}
+
+	img.portrait {
+		width: 150px;
+		height: 150px;
+		border-radius: 50%;
+	}
+}
+
+@media (max-width: 48em) {
+	.content {
+		padding: 2em;
+	}
+
+	.personal-info {
+		margin-top: 30px;
+	}
+
+	.personal-info .fa {
+		display: inline-block;
+		float: left;
+		margin-right: 8px;
+	}
+
+	.personal-info .location .fa {
+		margin-right: 9px;
+	}
+
+	.sidebar {
+		padding: 2em;
+	}
+
+	img.portrait {
+		display: block;
+		width: 200px;
+		height: 200px;
+		border-radius: 50%;
+		margin: 0 auto;
+	}
+
+	.brand-title,
+	.brand-tagline {
+		text-align: center;
 	}
 }
